@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Container styles */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: wheat;
+}
+/* Form styles */
+form {
+  width: 30%;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  height: 70vh;
+  background-color: #f9f9f9;
+}
+
+span {
+  color: red;
+}
+
+/* form label */
+.form-group label {
+  display: block;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Times New Roman", Times, serif;
+  margin-bottom: 5px;
+}
+
+/* form input */
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+/* form textarea */
+.form-group textarea {
+  width: 100%;
+  padding: 5px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+/* form button */
+form button {
+  margin-top: 30px;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 2px solid  #ccc;
+  outline: none;
+  background-color: #ac72df;
+  color: white;
+  cursor: pointer;
+}
+
+/* psudo classes */
+
+.form-group input:focus {
+  border: 1px solid #814caf;
+  animation: move 0.9s 1 ease-in-out
+}
+
+.form-group textarea:focus {
+  border: 1px solid #69428b;
+  animation: move 0.9s 1 ease-in-out;
+}
+
+ form button:hover {
+  background-color: #6d3e8f;
+  transform: scale(0.9);
+  transition: all 0.3s ease-in-out
+}
+
+
+@keyframes move {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
