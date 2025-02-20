@@ -383,12 +383,22 @@ if (firstNumber > secondNumber && firstNumber > thirdNumber) {
 
 console.log(`The second largest number is: ${secondMax}`);
 
-
-
 /*
 
 20 - Find First Non - Repeating Character  - Ask the user for a word  and first chracter that does not repeat. Example : Hello -> H is the first non repeating 
-*/ 
+*/
+let str = prompt("Enter a word");
+let obj = {};
 
+// Step 1: Store the character counts in the object
+for (let char of str) {
+  obj[char] = obj[char] ? obj[char] + 1 : 1; // Increment count, or set to 1 if it's the first time
+}
 
-
+// Step 2: Find the first non-repeating character
+for (let char of str) {
+  if (obj[char] === 1) {
+    console.log(`${char} is the first non-repeating character.`);
+    break; // Stop once the first non-repeating character is found
+  }
+}
