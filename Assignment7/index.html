@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 7</title>
+    <!-- Tailwind css -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+      @layer base {
+        body {
+          font-family: "Syne", "Syne Placeholder", sans-serif;
+          background-color: #fdfbf5;
+        }
+      }
+    </style>
+
+    <!-- Custom css -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Syne Font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="w-full h-full bg-customBackground font-syne">
+    <main class="m-4 border">
+      <!--  container  -->
+      <div class="container w-full p-8">
+        <!-- navigation bar -->
+        <nav>
+          <div class="navigation flex justify-between items-center">
+            <div class="logo flex items-center gap-3">
+              <img src="./Assests/logo.svg" alt="" width="50" />
+              <img src="./Assests/brandName.svg" alt="" width="70" />
+            </div>
+            <div class="links flex">
+              <ul class="flex justify-between items-center gap-5">
+                <li><a href="#">SERVICES</a></li>
+                <li><a href="#work">WORK</a></li>
+                <li><a href="#studio">STUDIO</a></li>
+                <li><a href="#blog">BLOG</a></li>
+                <li><a href="#pages">PAGES</a></li>
+                <button
+                  class="bg-black color-white-100 text-zinc-100 p-2 m-2 w-32 rounded tracking-wide"
+                >
+                  LET 'S TALK
+                </button>
+              </ul>
+              <div
+                class="social_media flex justify-center items-center gap-3 p-3"
+              >
+                <span>|</span>
+                <p
+                  class="border text-center p-2 rounded-full w-10 h-10 tracking-wide"
+                >
+                  IN
+                </p>
+                <p
+                  class="border text-center p-2 rounded-full w-10 h-10 tracking-wide"
+                >
+                  PI
+                </p>
+                <p
+                  class="border text-center p-2 rounded-full w-10 h-10 tracking-wide"
+                >
+                  TW
+                </p>
+
+                <span class="w-10">|</span>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <!-- Navigation bar end here  -->
+
+        <!-- Section 1 start here  -->
+        <section>
+          <!-- Hero Div -->
+          <div
+            class="hero border-t-1 mt-8 w-full grid grid-cols-2 gap-10 border-b-1 pt-10 pb-10"
+          >
+            <div class="leftContainer w-full flex flex-col gap-14">
+              <div class="details flex flex-col gap-4">
+                <div class="heading">
+                  <h1
+                    class="text-[80px] leading-[100%] font-medium tracking-normal"
+                  >
+                    We are a digital agency from Lisbon.
+                  </h1>
+                </div>
+
+                <div class="subheading">
+                  <p
+                    class="text-4xl leading-[150%] tracking-normal font-normal"
+                  >
+                    Elevating brands through creative digital solutions, proudly
+                    representing Lisbon's vibrant innovation.
+                  </p>
+                </div>
+              </div>
+
+              <div class="image">
+                <img src="./Assests/diamond.svg" alt="" width="60" />
+              </div>
+            </div>
+
+            <div class="rightContainer h-full">
+              <video
+                src="https://framerusercontent.com/assets/rXAszXcrH4ELEBbdilxkxdbfmrE.mp4"
+                class="block h-full w-full object-center object-cover rounded-2xl"
+                autoplay
+                muted
+              ></video>
+            </div>
+          </div>
+
+          <!-- Hero Div END-->
+        </section>
+        <!-- Section 1 End Here -->
+
+        <!-- Our clients section -->
+        <section>
+          <div class="clients w-full">
+            <div
+              class="clients-container py-5 flex justify-between items-center  relative"
+            >
+              <div class="name w-1/5 pt-8 pb-8">
+                <p
+                  class="text-xl font-normal leading-tight tracking-wider text-left "
+                >
+                  OUR CLIENTS
+                </p>
+              </div>
+              <div class="images w-4/5 flex justify-between gap-5">
+                <div class="img">
+                  <img
+                    class="h-24 w-20 object-contain"
+                    src="/Assests/client1.svg"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <img
+                    class="h-24 w-20 object-contain"
+                    src="/Assests/client2.svg"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <img
+                    class="h-24 w-20 object-contain"
+                    src="/Assests/client3.svg"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <img
+                    class="h-24 w-20 object-contain"
+                    src="/Assests/client4.svg"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <img
+                    class="h-24 w-20 object-contain"
+                    src="/Assests/client5.svg"
+                    alt=""
+                  />
+                </div>
+
+                <div>
+                  <img
+                    class="h-24 w-20 object-contain"
+                    src="/Assests/client6.svg"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Our Clients section end here  -->
+        <!-- What we do section(Section 2) start here  -->
+        <section>
+          <div class="whatweDo border-t-1 mt-8 w-full border-b-1 pt-10 pb-10">
+            <div class="container grid grid-cols-3 gap-10">
+              <!-- Left Container Start Here  -->
+              <div class="leftContainer border-r-1">
+                <p class="text-xl font-normal leading-[120%]">WHAT WE DO</p>
+              </div>
+              <!-- Left Container End Here  -->
+
+              <!-- Right Container Start here  -->
+              <div class="rightContainer h-full col-span-2">
+                <!-- Boxes Class start here  -->
+                <div class="boxes grid grid-cols-2">
+                  <div class="row1">
+                    <!-- Box1 Start Here -->
+                    <div class="box1 border-r-1 pl-8 pb-8 border-b-1">
+                      <div class="img">
+                        <img
+                          src="./Assests/circle.svg"
+                          alt=""
+                          width="60"
+                          height="60"
+                        />
+                      </div>
+
+                      <div class="heading font-semibold text-2xl pt-6 pb-2">
+                        <h1>BRANDING 1</h1>
+                      </div>
+
+                      <div
+                        class="subheading p-1 text-[18px] leading-[150%] tracking-wide"
+                      >
+                        <p>
+                          We craft compelling brand identities that leave a
+                          lasting impression.
+                        </p>
+                      </div>
+                    </div>
+
+                    <!-- Box1 End Here  -->
+
+                    <div class="box2 pl-8 pt-8 border-r-1 border-t-1">
+                      <div class="img">
+                        <img
+                          src="./Assests/circle.svg"
+                          alt=""
+                          width="60"
+                          height="60"
+                        />
+                      </div>
+
+                      <div class="heading font-semibold text-2xl pt-6 pb-2">
+                        <h1>DESIGN 2</h1>
+                      </div>
+
+                      <div
+                        class="subheading p-1 text-[18px] leading-[150%] tracking-wide"
+                      >
+                        Innovative and aesthetic designs that bring your ideas
+                        to life.
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Row1 end here -->
+
+                  <!-- Row2 Start Here -->
+                  <div class="Row2">
+                    <div class="box3 pl-8 pb-8 border-l-1 border-b-1">
+                      <div class="img">
+                        <img
+                          src="./Assests/circle.svg"
+                          alt=""
+                          width="60"
+                          height="60"
+                        />
+                      </div>
+
+                      <div class="heading font-semibold text-2xl pt-6 pb-2">
+                        <h1>BRANDING 3</h1>
+                      </div>
+
+                      <div
+                        class="subheading p-1 text-[18px] leading-[150%] tracking-wide"
+                      >
+                        Captivating visual storytelling that engages and
+                        resonates with your audience.
+                      </div>
+                    </div>
+                    <div class="box4 pl-8 pt-8 border-l-1 border-t-1">
+                      <div class="img">
+                        <img
+                          src="./Assests/circle.svg"
+                          alt=""
+                          width="60"
+                          height="60"
+                        />
+                      </div>
+
+                      <div class="heading font-semibold text-2xl pt-6 pb-2">
+                        <h1>DESIGN 4</h1>
+                      </div>
+
+                      <div
+                        class="subheading p-1 text-[18px] leading-[150%] tracking-wide"
+                      >
+                        Engaging and persuasive content that captures attention
+                        and sparks meaningful connections.
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Ṛow2 end here  -->
+                </div>
+                <!-- Boxes Class end here  -->
+              </div>
+              <!-- Right Container End here  -->
+            </div>
+          </div>
+          <!-- what we do end  -->
+        </section>
+        <!-- What we do section(Section 2) End here  -->
+
+        <!-- Section HOW We WORK  Section start here -->
+        <section>
+          <div class="howwework mt-8 w-full border-b-1 pt-10 pb-10">
+            <div class="containers grid grid-cols-3">
+              <div
+                class="leftContainer border-r-1 col-span-2 flex flex-col justify-between items-start gap-50"
+              >
+                <div
+                  class="details flex flex-col justify-between items-start gap-2 w-full"
+                >
+                  <p class="text-[18px] w-full">HOW WE WORK</p>
+
+                  <h1
+                    class="w-full text-6xl font-medium leading-[110%] tracking-wide"
+                  >
+                    We help our clients succeed with <br />
+                    innovative strategies.
+                  </h1>
+                </div>
+
+                <div class="images">
+                  <img src="./Assests/Diamond2.svg" alt="" width="100" />
+                </div>
+              </div>
+              <div class="rightContainer pl-8">
+                <div
+                  class="para flex flex-col justify-between items-start gap-50 pb-0 h-full"
+                >
+                  <p class="text-[20px] leading-[200%]">
+                    Through careful analysis, creative thinking, and a deep
+                    understanding of their goals, we empower businesses to
+                    surpass expectations and thrive in today's dynamic and
+                    competitive landscape.
+                  </p>
+
+                  <div class="btn">
+                    <button
+                      class="bg-black color-white text-zinc-100 p-2 mt-2 rounded tracking-wide"
+                    >
+                      OUR SERVICES
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Section HOW We WORK  Section start here -->
+
+        <!-- Our Value section  -->
+        <section>
+          <!-- Our Value Start Here -->
+          <div class="ourValue w-full border-b-1 pt-10 pb-10 text-center">
+            <header>
+              <h2 class="text-5xl font-medium leading-[100%] tracking-normal">
+                OUR VALUES
+              </h2>
+            </header>
+          </div>
+          <div
+            class="container grid grid-cols-2 gap-4 pt-10 pb-10 h-[900px] border-b-1"
+          >
+            <div class="leftContainer">
+              <div class="imageContainer h-full pr-12 border-r-1">
+                <div class="image h-full">
+                  <img
+                    src="./Assests/Team.jpg"
+                    alt=""
+                    class="h-full rounded-3xl object-cover object-center"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <!-- right container  -->
+            <div class="rightContainer pl-8 w-full">
+              <div class="boxes h-full w-full flex flex-col justify-between">
+                <!-- Box1 Start here  -->
+                <div class="box1">
+                  <div
+                    class="flex justify-start items-start nowrap gap-4 border-b-1 p-2 pb-8"
+                  >
+                    <div class="number border h-full rounded-[50%]">
+                      <p class="text-[12px] p-2 text-center">01</p>
+                    </div>
+                    <div
+                      class="details flex flex-col justify-between items-start gap-4"
+                    >
+                      <div class="heading w-full">
+                        <h2 class="text-4xl tracking-wider font-medium">
+                          VISION
+                        </h2>
+                      </div>
+                      <div class="subheading w-full">
+                        <p class="leading-[150%] text-lg">
+                          Our relentless pursuit of a shared vision fuels our
+                          creativity and propels us forward. With clarity and
+                          foresight, we craft strategies that align with our
+                          clients' goals and aspirations, transforming their
+                          dreams into reality and shaping a future worth
+                          embracing.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Box1 end here  -->
+
+                <!-- Box 2 Start -->
+                <div class="box2">
+                  <div
+                    class="box2 flex justify-start items-start nowrap gap-4 border-b-1 pt-0 pb-10"
+                  >
+                    <div class="number border h-full rounded-[50%]">
+                      <p class="text-[12px] p-2 text-center">02</p>
+                    </div>
+                    <div
+                      class="details flex flex-col justify-between items-start gap-4"
+                    >
+                      <div class="heading w-full">
+                        <h2 class="text-4xl tracking-wider font-medium">
+                          INNOVATION
+                        </h2>
+                      </div>
+                      <div class="subheading w-full">
+                        <p class="leading-[150%] text-lg">
+                          Innovation is at the core of everything we do. We
+                          embrace curiosity, explore uncharted territories, and
+                          challenge the status quo. By pushing boundaries and
+                          thinking outside the box, we create groundbreaking
+                          solutions that disrupt industries and inspire
+                          audiences.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Box 2 end  -->
+
+                <!-- Box3 Start Here -->
+                <div class="box3">
+                  <div class="box3 flex justify-start items-start nowrap gap-4">
+                    <div class="number border h-full rounded-[50%]">
+                      <p class="text-[12px] p-2 text-center">03</p>
+                    </div>
+                    <div
+                      class="details flex flex-col justify-between items-start gap-4"
+                    >
+                      <div class="heading w-full">
+                        <h2 class="text-4xl tracking-wider font-medium">
+                          CONNECTION
+                        </h2>
+                      </div>
+                      <div class="subheading w-full">
+                        <p class="leading-[150%] text-lg">
+                          We believe in the power of connection. We strive to
+                          build bridges between brands and their audiences,
+                          fostering genuine and lasting relationships. Through
+                          compelling storytelling and meaningful interactions,
+                          we create experiences that evoke emotions, strengthen
+                          bonds, and cultivate trust, ultimately turning
+                          customers into brand advocates.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Box-3 End here  -->
+              </div>
+              <!-- Boxes end here  -->
+            </div>
+          </div>
+          <!-- Our Value End Here -->
+        </section>
+        <!-- Our Value section  End Here  -->
+
+        <!-- Contact Start Here  -->
+        <section>
+          <div class="contact w-full border-t-1 border-b-1 pt-16 pb-10">
+            <div class="containers grid grid-cols-3 gap-8">
+              <div
+                class="leftContainer border-r-1 col-span-2 flex flex-col justify-between items-start gap-50"
+              >
+                <div
+                  class="details flex flex-col justify-between items-start gap-2 w-full"
+                >
+                  <p class="text-[18px] w-full">CONTACT</p>
+
+                  <h1
+                    class="w-full text-8xl font-normal leading-[100%] tracking-tight"
+                  >
+                    LET'S BRING YOUR BRAND TO THE NEXT LEVEL
+                  </h1>
+                </div>
+
+                <div class="images">
+                  <img src="./Assests/triangle.svg" alt="" width="100" />
+                </div>
+              </div>
+              <div class="rightContainer pl-8">
+                <div
+                  class="para flex flex-col justify-between items-start gap-50 pb-0 h-full"
+                >
+                  <p class="text-[20px] leading-[200%]">
+                    Together, let's elevate your brand to new heights by
+                    unleashing its full potential and captivating your target
+                    audience.
+                  </p>
+
+                  <div class="btn">
+                    <button
+                      class="bg-black color-white text-zinc-100 p-2 mt-2 rounded tracking-wide"
+                    >
+                      GET IN TOUCH
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Contact End Here -->
+
+        <!-- Latest News Section Start Here  -->
+        <section>
+          <!-- latest news Start Here -->
+          <div class="news w-full pt-10 pb-10">
+            <div
+              class="latestNewsHeadingcontainer flex items-center justify-start"
+            >
+              <header class="w-[90%]">
+                <h2 class="text-6xl font-medium leading-[100%] tracking-normal">
+                  LATEST NEWS
+                </h2>
+              </header>
+
+              <div class="btn p-2 border rounded w-24 text-center">
+                <a>SEE &nbsp; ALL</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="newsContainer border-t-1 border-b-1 pt-10 pb-10">
+            <div
+              class="cardContainer grid flex-1 gap-10 grid-auto-rows-min grid-cols-3 justify-center"
+            >
+              <div class="card1 flex flex-col items-start gap-2">
+                <div class="image overflow-hidden relative">
+                  <img
+                    src="/Assests/img1.webp"
+                    alt=""
+                    class="object-center object-cover rounded-2xl"
+                  />
+                </div>
+
+                <div class="details flex flex-col gap-2">
+                  <div class="heading text-xl font-normal">
+                    <h4>BRANDING</h4>
+                  </div>
+                  <div class="subheading text-2xl font-medium">
+                    <p>
+                      Things to Look for When Comparing Branding Alternatives
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card2 flex flex-col gap-2">
+                <div class="image">
+                  <img
+                    src="Assests/img2.webp"
+                    alt=""
+                    class="object-center object-cover w-full rounded-2xl"
+                  />
+                </div>
+                <div class="details flex flex-col gap-2">
+                  <div class="heading text-xl font-normal">
+                    <h4>BRANDING</h4>
+                  </div>
+                  <div class="subheading text-2xl font-medium">
+                    <p>
+                      Things to Look for When Comparing Branding Alternatives
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card3 flex flex-col gap-2">
+                <div class="image">
+                  <img
+                    src="Assests/img3.webp"
+                    alt=""
+                    class="object-center object-cover w-full rounded-2xl"
+                  />
+                </div>
+                <div class="details flex flex-col gap-2">
+                  <div class="heading text-xl font-normal">
+                    <h4>BRANDING</h4>
+                  </div>
+                  <div class="subheading text-2xl font-medium">
+                    <p>
+                      Things to Look for When Comparing Branding Alternatives
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- cardContainer end here  -->
+          </div>
+          <!-- NewsContainer end here  -->
+        </section>
+        <!-- Latest News Section End Here  -->
+      </div>
+      <!-- Container end here  -->
+    </main>
+
+    <script type="module" src="">
+      module.exports = {
+        theme: {
+          extend: {
+            fontFamily: {
+              syne: ["Syne", "sans-serif"],
+            },
+            backgroundColor: {
+              customBackground: "#FDFBF5",
+            },
+          },
+        },
+      };
+    </script>
+  </body>
+</html>
